@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Chat</title>
+    <link rel="stylesheet" href="/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs/lib/stomp.min.js"></script>
+    <script src="main.js" defer></script>
+
+  </head>
+  <body>
+    <div id="chat-container">
+        <img src="assets/logo.jpg" alt="logo">
+        <h2>Chat</h2>
+        <input type="text" id="username" placeholder="Votre prénom" />
+        <button id="connect-button">Se connecter</button>
+        <button id="disconnect-button" class="top-right" style="display: none;">Se déconnecter</button>
+        <div id="chatroom" style="display: none;"></div>
+          <label for="message-input"></label><input type="text" id="message-input" placeholder="Votre message" style="display: none;" />
+          <button id="send-button" style="display: none;">Envoyer</button>
+        </div>
+  </body>
+</html>
