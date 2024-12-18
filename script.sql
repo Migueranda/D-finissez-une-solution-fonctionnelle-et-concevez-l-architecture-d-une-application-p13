@@ -26,7 +26,9 @@ Table reservations {
   end_date date
   total_price decimal
   status varchar
-  created_at timestamp 
+  created_at timestamp
+  CONSTRAINT fk_reservation_user FOREIGN KEY (user_id) REFERENCES users(id)
+  CONSTRAINT fk_reservation_car FOREIGN KEY (car_id) REFERENCES cars(id)
 }
 
 Table payments {
@@ -36,7 +38,7 @@ Table payments {
   amount decimal
   total_price decimal
   status varchar
- 
+  CONSTRAINT fk_payment_reservation FOREIGN KEY (reservation_id) REFERENCES reservations(id)
 }
 
 // Relations entre les tables

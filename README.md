@@ -24,4 +24,4 @@ mvn spring-boot:run
 ```
 
 Accès à l’application
-[http://localhost:8080](URL)s
+[http://localhost:8080](URL)
